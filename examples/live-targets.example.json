@@ -1,0 +1,6 @@
+{
+  "targets": [
+    {"name": "local-ssh", "role": "server", "kind": "tcp", "host": "127.0.0.1", "port": 22, "timeout_s": 2},
+    {"name": "lab-switch", "role": "switch", "kind": "snmp", "host": "192.0.2.10", "snmp_version": "2c", "timeout_s": 2}
+  ]
+}

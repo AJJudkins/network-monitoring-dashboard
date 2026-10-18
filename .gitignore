@@ -10,3 +10,4 @@ venv/
 !example.tfvars
 crash.log
 .env
+*.egg-info/

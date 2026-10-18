@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "network-monitoring-dashboard"
+version = "0.2.0"
+description = "Network device monitor: simulated by default, read-only TCP/SNMP checks with --live."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+netmon = "netmon.cli:main"
+
+[tool.setuptools]
+packages = ["netmon"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
