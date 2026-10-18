@@ -1,0 +1,8 @@
+[
+  {"name": "core-sw-01", "role": "core", "base_latency_ms": 1.5, "jitter_ms": 0.4},
+  {"name": "edge-rtr-01", "role": "router", "base_latency_ms": 8, "jitter_ms": 2, "degraded_rate": 0.03},
+  {"name": "fw-01", "role": "firewall", "base_latency_ms": 5, "jitter_ms": 1},
+  {"name": "access-sw-12", "role": "access", "base_latency_ms": 3, "jitter_ms": 1, "failure_rate": 0.15},
+  {"name": "wifi-ap-07", "role": "wireless", "base_latency_ms": 20, "jitter_ms": 6, "degraded_rate": 0.08, "failure_rate": 0.05},
+  {"name": "branch-vpn-02", "role": "vpn", "base_latency_ms": 45, "jitter_ms": 12, "degraded_rate": 0.1}
+]
